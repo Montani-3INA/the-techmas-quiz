@@ -36,3 +36,463 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  text-align: center;
+  background-color: rgb(145, 4, 4);
+  height: 100vh;
+}
+
+.not-found {
+color: white;
+}
+
+.not-found h1 {
+font-size: 50px;
+}
+
+.nav_background {
+  background-color: rgb(16, 62, 10) !important;
+}
+
+.footer-background {
+  background-color: rgb(16, 62, 10) !important;
+}
+
+.score-container {
+color: white;
+}
+
+.progress_bar {
+box-shadow: 0 0 10px 0 rgba(40, 123, 2, 0.5);
+}
+
+.footer i {
+color: rgb(183, 5, 5);
+}
+
+.footer a {
+  color: white;
+}
+
+#content {
+  text-align: center;
+  background-color: rgb(145, 4, 4);
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 12%;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+#content {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.table {
+  margin: 0 auto;
+  color: white;
+  width: 40%;
+  margin-top: 5%;
+}
+
+.answers-btn-container button {
+  background-color: rgb(5, 94, 5);
+  color: white;
+}
+
+/* make progress div cenntered and make it 40% of the screen */
+.progress {
+  margin: 0 auto;
+  width: 40%;
+  border-radius: 25px;
+  margin-top: 5%;
+}
+
+/*make progress bar green, make it 40% and make it rounded*/
+.progress-bar {
+  background-color: rgb(16, 62, 10) !important;
+  width: 40%;
+  border-radius: 25px;
+}
+
+.question-container {
+  color: white;
+  padding: 1%;
+}
+
+.question-container h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.answers-btn-container button{
+  margin: 50px;
+  transition: 0.3s;
+  background-color: rgb(5, 94, 5);
+  color: white;
+  font-size: 20px;
+  width: 20%;
+}
+
+.answers-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.answers-btn-container button:hover {
+  transform:scale(1.3,1.3);
+  -webkit-transform:scale(1.3,1.3);
+  -moz-transform:scale(1.3,1.3);
+  transition: 0.3s;
+  color: rgb(5, 94, 5);
+  background-color: rgb(155, 183, 154);
+}
+
+.homeTitle{
+  border-radius: 16px;
+  background-color: white;
+  width: 26%;
+  height: 6%;
+  color: red;
+}
+
+.home_text{
+    color: white;
+    font-size: 100px;
+    font-family: 'Tangerine', serif;
+    margin: 0% !important;
+    font-weight: 600;
+}
+
+.home_description{
+  color: white;
+  font-size: 20px;
+  font-variant: small-caps;
+  padding-top: 1%;
+}
+
+.home_game_link_section{
+  padding: 2%;
+}
+
+.home_btn_description{
+  font-size: 16px;
+  color: white;
+  padding: 1%;
+}
+
+.home_btn:hover{
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.home_btn {
+  background-color: goldenrod;
+  color: #910404  !important;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 0.2s;
+  padding: 16px;
+}
+
+.greetings {
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding-top: 5%;
+  font-variant: small-caps;
+}
+
+.about_image {
+  width: 80%;
+}
+
+.about_text {
+  font-variant: small-caps;
+  color: white;
+  
+}
+
+.about_text a{
+  border: none !important;
+}
+
+.lightrope {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  margin: -15px 0 0 0;
+  padding: 0;
+  pointer-events: none;
+  width: 100%;
+}
+.lightrope li {
+  position: relative;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 12px;
+  height: 28px;
+  border-radius: 50%;
+  margin: 20px;
+  display: inline-block;
+  background: #00f7a5;
+  box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+  -webkit-animation-name: flash-1;
+          animation-name: flash-1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.lightrope li:nth-child(2n+1) {
+  background: aqua;
+  box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.5);
+  -webkit-animation-name: flash-2;
+          animation-name: flash-2;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+.lightrope li:nth-child(4n+2) {
+  background: #f70094;
+  box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+  -webkit-animation-name: flash-3;
+          animation-name: flash-3;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+}
+.lightrope li:nth-child(odd) {
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+}
+.lightrope li:nth-child(3n+1) {
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+}
+.lightrope li:before {
+  content: "";
+  position: absolute;
+  background: #222;
+  width: 10px;
+  height: 9.3333333333px;
+  border-radius: 3px;
+  top: -4.6666666667px;
+  left: 1px;
+}
+.lightrope li:after {
+  content: "";
+  top: -14px;
+  left: 9px;
+  position: absolute;
+  width: 52px;
+  height: 18.6666666667px;
+  border-bottom: solid #222 2px;
+  border-radius: 50%;
+}
+.lightrope li:last-child:after {
+  content: none;
+}
+.lightrope li:first-child {
+  margin-left: -40px;
+}
+
+#home-content {
+  text-align: center;
+  padding: 15%;
+  padding-top: 5%;
+  padding-bottom: 12%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+#home-content h5 {
+  font-weight: bold;
+}
+
+#home-content p {
+  display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#home-content a {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  color:white;
+  transition: 0.3s;
+}
+
+#home-content a:hover {
+  transition: 0.3s;
+  color: rgb(16, 62, 10);
+  background-color: white;
+}
+
+#home-content .card {
+  color:rgb(255, 255, 255);
+  background-color: rgb(16, 62, 10);
+  border: 2px solid rgb(226, 226, 226);
+  border-radius: 20px;
+}
+
+.col img {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+.page-title {
+  color: white;
+  padding-bottom: 4%;
+}
+
+.page-title h1 {
+  font-family: 'Tangerine', serif;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.description-text {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 4%;
+}
+
+@media only screen and (max-width: 1800px) {
+
+  #home-content {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    transition: 0.3s;
+  }
+
+  .cards-container {
+    transform: scale(0.9);
+  }
+
+  .cards-container h5 {
+    font-size: 15px;
+  }
+
+  .cards-container p {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #home-content {
+    padding-top: 10%;
+    padding-bottom: 30%;
+  }
+
+  .home-title {
+    text-align: center;
+  }
+  
+  .home-title h1 {
+    text-align: center;
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  #home-content {
+    padding-top: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .cards-container {
+    
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .cards-container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+
+@-webkit-keyframes flash-1 {
+  0%, 100% {
+    background: #00f7a5;
+    box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+  }
+  50% {
+    background: rgba(0, 247, 165, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 0.2);
+  }
+}
+
+@keyframes flash-1 {
+  0%, 100% {
+    background: #00f7a5;
+    box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+  }
+  50% {
+    background: rgba(0, 247, 165, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 0.2);
+  }
+}
+@-webkit-keyframes flash-2 {
+  0%, 100% {
+    background: aqua;
+    box-shadow: 0px 4.6666666667px 24px 3px aqua;
+  }
+  50% {
+    background: rgba(0, 255, 255, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.2);
+  }
+}
+@keyframes flash-2 {
+  0%, 100% {
+    background: aqua;
+    box-shadow: 0px 4.6666666667px 24px 3px aqua;
+  }
+  50% {
+    background: rgba(0, 255, 255, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.2);
+  }
+}
+@-webkit-keyframes flash-3 {
+  0%, 100% {
+    background: #f70094;
+    box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+  }
+  50% {
+    background: rgba(247, 0, 148, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 0.2);
+  }
+}
+@keyframes flash-3 {
+  0%, 100% {
+    background: #f70094;
+    box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+  }
+  50% {
+    background: rgba(247, 0, 148, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 0.2);
+  }
+}
