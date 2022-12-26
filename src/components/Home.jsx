@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 function Home() {
   return (
     <div className="homePage">
+      
       <ul class="lightrope">
             <li></li>
             <li></li>
